@@ -1,0 +1,22 @@
+import './App.css';
+import Title from './components/Title';
+import Content from './components/Content';
+import { createContext, useState } from 'react';
+// create contaxt
+export const ThemeContext = createContext();
+
+function App() {
+  const [theme, setTheme] = useState('light');
+
+  return (
+    // sent data contact
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div>
+        <Title />
+        <Content />
+      </div>
+    </ThemeContext.Provider>
+  );
+}
+
+export default App;
