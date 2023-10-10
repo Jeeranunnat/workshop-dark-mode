@@ -1,5 +1,5 @@
 import Switch from 'react-switch';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../App';
 
 const Title = () => {
